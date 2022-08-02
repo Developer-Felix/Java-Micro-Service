@@ -17,19 +17,20 @@ public record CustomerController(CustomerService customerService) {
     }
 
     @GetMapping("/customers")
-    public List<Customer> getAllCustomers() {
-        return  List.of(new Customer(
-                1,
-                "Felix",
-                "Onjomba",
-                "onjombafelix1@gmail.com"
-        ),
-                new Customer(
-                        2,
-                        "Alex",
-                        "Aminga",
-                        "alexaminga1@gmail.com"
-                )
-        );
+    public List<String> getAllCustomers() {
+//        return  List.of(new Customer(
+//                1,
+//                "Felix",
+//                "Onjomba",
+//                "onjombafelix1@gmail.com"
+//        ),
+//                new Customer(
+//                        2,
+//                        "Alex",
+//                        "Aminga",
+//                        "alexaminga1@gmail.com"
+//                )
+//        );
+        return List.of("test", "test", "test", "test", "test", "test");
     }
 }
